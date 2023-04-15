@@ -564,7 +564,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 else:
                     await query.answer(f"Hᴇʏ {query.from_user.first_name}, Tʜɪs Is Nᴏᴛ Yᴏᴜʀ Mᴏᴠɪᴇ Rᴇǫᴜᴇsᴛ. Rᴇǫᴜᴇsᴛ Yᴏᴜʀ's !", show_alert=True)
             else:
-                if clicked == typed:InlineKeyboardButton(
+                if clicked == typed:
                     await client.send_cached_media(
                         chat_id=query.from_user.id,
                         file_id=file_id,
@@ -2114,3 +2114,4 @@ async def global_filters(client, message, text=False):
                 break
     else:
         return False
+    
