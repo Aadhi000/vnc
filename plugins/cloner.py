@@ -166,7 +166,7 @@ async def cloned_count(client, message):
         
         @Client.on_message(filters.command(["removebot"]) & filters.user(ADMINS))
 
-async def remove_bot(client: Client, message: Message):
+async def remov
 
     bot_username = message.text.split(" ", maxsplit=1)[1].strip()
 
